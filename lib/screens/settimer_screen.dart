@@ -21,12 +21,11 @@ class _SetTimerScreenState extends State<SetTimerScreen> {
             children: <Widget>[
               Row(
                 children: <Widget>[
-                  Hero(
-                    tag: 'logo',
-                    child: Container(
-                      child: Image.asset('images/logo.png'),
-                      height: 60,
-                    ),
+                  Expanded(
+                    flex: 1,
+                    child: Image(
+                        image: AssetImage('images/logo.png'),
+                        fit: BoxFit.cover),
                   ),
                 ],
               ),
